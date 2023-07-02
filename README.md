@@ -29,9 +29,7 @@ For our purposes, we'll name this role `"ExecutionRole"`.
 
 ***Next, Your AWS user must have an IAM policy which grants permissions for interacting with DynamoDB and S3. It also includes permission to assume the `ExecutionRole` role.***
 
-You can see how you can create an IAM Role with minimal permissions [here](https://terragrunt.gruntwork.io/docs/features/aws-auth/). 
-
-We'll name this role `"TerragruntRole"`
+You can see how you can create an IAM Role with minimal permissions [here](https://terragrunt.gruntwork.io/docs/features/aws-auth/).
 
 **_NOTE:_** Recommend using a Trust Relationship to securely use Roles)
 
