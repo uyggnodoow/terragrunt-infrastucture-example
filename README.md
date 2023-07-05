@@ -31,7 +31,7 @@ For our purposes, we'll name this role `"ExecutionRole"`.
 
 You can see how you can create an IAM Role with minimal permissions [here](https://terragrunt.gruntwork.io/docs/features/aws-auth/).
 
-**_NOTE:_** Recommend using a Trust Relationship to securely use Roles)
+**_NOTE:_** Recommend using a Trust Relationship to securely use Roles
 
 
 ### Update the parameters
