@@ -3,14 +3,14 @@
 This is just one of many structures for using Terragrunt.
 
 
-## Prerequisites
+## 1. Prerequisites
 
 1. Install `terraform` and `terragrunt`
 2. Configure your `AWS credentials` using one of the supported authentication mechanisms.
 3. Update the parameters in the root `terragrunt.hcl`, and in `env.hcl` for each account.
 
 
-### Install Terraform and Terragrunt
+### 1-1. Install Terraform and Terragrunt
 
 You can download it from the official website.
 
@@ -18,7 +18,7 @@ You can download it from the official website.
 * [Install Terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/)
 
 
-### Configure AWS credentials (using IAM Role)
+### 1-2. Configure AWS credentials (using IAM Role)
 
 To summarize, we need to create two IAM roles.
 
@@ -34,20 +34,20 @@ You can see how you can create an IAM Role with minimal permissions [here](https
 **_NOTE:_** Recommend using a Trust Relationship to securely use Roles
 
 
-### Update the parameters
+### 1-3. Update the parameters
 
 Update the parameter values required by the `*.hcl` file.
 
 
-## Deploy the infrastructure
+## 2. Deploy the infrastructure
 
-### Deploy single module
+### 2-1. Deploy single module
 
 1. Change directory into the resource to deploy folder (eg. `cd /prod/us-east-1/ec2`)
 2. Run `terragrunt plan` to see the changes you're about to apply.
 3. If there are no issues, run `terragrunt apply`.
 
-### Deploy all modules
+### 2-2. Deploy all modules
 
 1. Change directory into the account/region folder (eg. `cd /prod`, `cd /prod/us-east-1`)
 2. Run `terragrunt run-all plan` to see the changes you're about to apply.
